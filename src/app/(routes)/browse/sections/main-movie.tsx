@@ -5,8 +5,8 @@ import { Button } from '@/components/ui/button';
 
 export default function MainMovie() {
   return (
-    <div className="absolute inset-0 z-10 mt-[calc(7%+48px)] flex items-start justify-start px-16 text-foreground">
-      <div className="origin-top-left scale-[0.5] sm:scale-[0.7] md:scale-[0.85] lg:scale-100">
+    <div className="px-16">
+      <div className="flex origin-top-left scale-x-[0.5] sm:scale-x-[0.7] md:scale-x-[0.85] lg:scale-x-100">
         <div className="flex flex-col gap-4">
           <Image src="/n-series.png" alt="n-series" width={150} height={200} />
           <Image src="/movie-logo.png" alt="movie-logo" width={500} height={200} />
@@ -22,7 +22,7 @@ export default function MainMovie() {
           </p>
 
           <div className="flex gap-3">
-            <Button variant="default" className="flex items-center gap-2 px-4 py-2 text-sm md:text-base">
+            <Button variant="default" className="flex items-center gap-2 px-4 text-sm md:text-base">
               <PlayIcon fill="background" /> Play
             </Button>
             <Button variant="secondary" className="flex items-center gap-2 px-4 py-2 text-sm md:text-base">
